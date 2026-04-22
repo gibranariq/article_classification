@@ -1,0 +1,156 @@
+Trained at 15/09/2025 17:14:06
+SEED : 42
+===== Training Parameters =====
+Model ID         : bert-base-multilingual-uncased
+Device / AMP     : cuda / True
+Seed             : 42
+Max length       : 512
+Batch size       : 64 (total)
+Learning rate    : 2e-05
+Weight decay     : 0.01
+Warmup ratio     : 0.1
+Epochs (max)     : 10
+Patience         : 2
+Min delta (loss) : 0.001
+Scheduler        : cosine
+Grad clip maxnorm: 1.0
+Label smoothing  : 0.0
+EMA              : ON (decay=0.999)
+Artifacts VER    : 20250915171406
+================================
+[OPT] AdamW fused enabled
+[LOSS] Label smoothing = OFF
+[EMA] Enabled (decay=0.999)
+Steps/epoch      : 3357
+Total steps      : 33570
+Warmup steps     : 3357
+================================
+
+Epoch 1/10
+Train loss: 1.6099807149887368
+Validation Loss: 0.46089957195023695
+Validation Accuracy: 0.8691276041666666
+Validation F1 (micro): 0.8690933976406179
+
+Epoch 2/10
+Train loss: 0.37240374432296885
+Validation Loss: 0.28400885270287596
+Validation Accuracy: 0.9067816840277777
+Validation F1 (micro): 0.9068630645897152
+
+Epoch 3/10
+Train loss: 0.26061050833993843
+Validation Loss: 0.2527640526803831
+Validation Accuracy: 0.9157421874999999
+Validation F1 (micro): 0.9157596297986054
+
+Epoch 4/10
+Train loss: 0.19922630318199414
+Validation Loss: 0.24707986931316556
+Validation Accuracy: 0.91984375
+Validation F1 (micro): 0.9198657368180929
+
+Epoch 5/10
+Train loss: 0.14904271176826717
+Validation Loss: 0.26101877087106307
+Validation Accuracy: 0.9201085069444445
+Validation F1 (micro): 0.9200938538747312
+
+Epoch 6/10
+Train loss: 0.10305326507311112
+Validation Loss: 0.28558249124325813
+Validation Accuracy: 0.9192296006944445
+Validation F1 (micro): 0.9192139737991266
+
+
+[Validation - BEST model (by F1)]
+                                  precision    recall  f1-score   support
+
+              bisnis__agribisnis       0.86      0.92      0.89       390
+                 bisnis__ekonomi       0.84      0.83      0.84       530
+         bisnis__ekonomi_digital       0.83      0.74      0.79       231
+                bisnis__industri       0.84      0.83      0.83       281
+           bisnis__infrastruktur       0.90      0.86      0.88       356
+         bisnis__karier_keuangan       0.86      0.80      0.83       237
+               bisnis__korporasi       0.80      0.80      0.80       564
+                  bisnis__market       0.94      0.93      0.94       479
+                bisnis__properti       0.87      0.88      0.88       245
+          bisnis__tambang_energi       0.91      0.92      0.91       581
+            bisnis__transportasi       0.88      0.92      0.90       365
+                    bisnis__umkm       0.76      0.84      0.80       176
+            bola__sports__basket       0.99      1.00      0.99        89
+         bola__sports__formula_1       0.98      0.98      0.98        61
+    bola__sports__liga_champions       1.00      0.99      0.99       225
+       bola__sports__liga_europa       0.96      0.98      0.97        55
+    bola__sports__liga_indonesia       0.99      0.99      0.99       669
+      bola__sports__liga_inggris       0.99      1.00      0.99       529
+bola__sports__liga_internasional       0.98      0.98      0.98       527
+       bola__sports__liga_italia       1.00      1.00      1.00       215
+       bola__sports__liga_jerman       1.00      0.98      0.99        47
+      bola__sports__liga_prancis       1.00      1.00      1.00        21
+      bola__sports__liga_spanyol       0.99      0.98      0.99       153
+            bola__sports__motogp       0.99      0.98      0.98       125
+         bola__sports__olimpiade       0.97      0.98      0.97       188
+             bola__sports__raket       0.99      0.99      0.99       303
+          entertainment__film_tv       0.94      0.95      0.95       937
+       entertainment__gaya_hidup       0.74      0.74      0.74        31
+            entertainment__gosip       0.97      0.97      0.97      2738
+           entertainment__horror       0.97      0.98      0.97       139
+entertainment__japan_pop_culture       0.88      0.70      0.78        10
+             entertainment__kpop       0.96      0.97      0.97       832
+            entertainment__musik       0.94      0.93      0.93       916
+     entertainment__relationship       0.85      0.89      0.87        44
+      food_travel__kuliner_dunia       0.81      0.78      0.79       183
+      food_travel__kuliner_halal       0.81      0.81      0.81        48
+  food_travel__kuliner_indonesia       0.84      0.87      0.85       217
+      food_travel__makanan_sehat       0.89      0.90      0.89       265
+     food_travel__mountaineering       0.94      0.91      0.92        33
+         food_travel__staycation       0.85      0.89      0.87        62
+       food_travel__wisata_dunia       0.84      0.90      0.87       354
+       food_travel__wisata_halal       0.95      0.86      0.90        44
+   food_travel__wisata_indonesia       0.91      0.86      0.88       482
+                        mom__asi       0.96      0.96      0.96       137
+                     mom__balita       0.86      0.62      0.72        40
+                       mom__bayi       0.91      0.96      0.94       285
+                  mom__dunia_ibu       0.76      0.51      0.61        51
+                  mom__kehamilan       0.97      0.96      0.96       276
+                  mom__kesehatan       0.81      0.84      0.82       164
+                  mom__parenting       0.84      0.85      0.85       325
+               mom__sekolah_anak       0.91      0.91      0.91        57
+                       mom__seks       0.85      0.89      0.87        38
+                     news__hukum       0.92      0.92      0.92      1159
+             news__internasional       0.94      0.97      0.95      1366
+                  news__kriminal       0.91      0.90      0.91      1958
+               news__megapolitan       0.87      0.89      0.88       977
+                news__pendidikan       0.90      0.91      0.91       448
+                 news__peristiwa       0.89      0.90      0.89      1422
+                   news__politik       0.95      0.94      0.94      2068
+                    news__religi       0.93      0.85      0.89       719
+                 otomotif__mobil       0.99      0.98      0.98       725
+                 otomotif__motor       0.94      0.96      0.95       246
+                 tekno_sains__ai       0.88      0.62      0.72        34
+               tekno_sains__apps       0.89      0.87      0.88       314
+        tekno_sains__dunia_hewan       0.90      0.95      0.92       156
+           tekno_sains__fenomena       0.90      0.82      0.86       163
+             tekno_sains__gadget       0.94      0.97      0.96       293
+               tekno_sains__game       0.97      0.96      0.96       179
+ tekno_sains__industri_teknologi       0.83      0.84      0.83       296
+            tekno_sains__inovasi       0.74      0.79      0.76       138
+           tekno_sains__internet       0.87      0.85      0.86       152
+          tekno_sains__kesehatan       0.92      0.92      0.92       246
+tekno_sains__peninggalan_sejarah       0.82      0.88      0.85        68
+                   woman__beauty       0.95      0.95      0.95       310
+                    woman__bride       0.93      0.82      0.87        33
+                   woman__career       0.84      0.86      0.85        63
+              woman__empowerment       0.87      0.77      0.82        69
+               woman__from_heart       0.93      0.67      0.78        21
+                    woman__hijab       0.97      0.85      0.91        40
+                 woman__love_sex       0.89      0.92      0.90       112
+                    woman__royal       0.92      0.99      0.95        73
+                    woman__style       0.92      0.95      0.94       263
+                 woman__wellness       0.90      0.92      0.91       183
+                   woman__zodiak       0.97      0.93      0.95        42
+
+                        accuracy                           0.92     30686
+                       macro avg       0.91      0.89      0.90     30686
+                    weighted avg       0.92      0.92      0.92     30686
